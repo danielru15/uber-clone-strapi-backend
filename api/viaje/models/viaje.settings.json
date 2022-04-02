@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "viajes",
+  "info": {
+    "name": "viaje",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ubicacion": {
+      "type": "string"
+    },
+    "destino": {
+      "type": "string"
+    },
+    "dia": {
+      "type": "datetime"
+    },
+    "precio": {
+      "type": "float"
+    },
+    "usuario": {
+      "via": "viajes",
+      "model": "usuarios"
+    },
+    "tipocarro": {
+      "type": "string"
+    }
+  }
+}

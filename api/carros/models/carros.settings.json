@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carros",
+  "info": {
+    "name": "carros",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "carro": {
+      "type": "string"
+    },
+    "imagen": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "preciomultiplicador": {
+      "type": "decimal"
+    }
+  }
+}
