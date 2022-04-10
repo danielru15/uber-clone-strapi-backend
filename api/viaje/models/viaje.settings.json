@@ -24,12 +24,13 @@
     "precio": {
       "type": "float"
     },
-    "usuario": {
-      "via": "viajes",
-      "model": "usuarios"
-    },
     "tipocarro": {
       "type": "string"
+    },
+    "user": {
+      "via": "viajes",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
